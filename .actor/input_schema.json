@@ -46,7 +46,9 @@
       "description": "Set up Apify Proxy.",
       "properties": {
         "useApifyProxy": {
+          "title": "Use Apify Proxy",
           "type": "boolean"
+          "default": true
         }
       },
       "default": {
