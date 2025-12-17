@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "instagram-monetization-lead-finder",
+  "title": "Instagram Monetization Lead Finder",
+  "description": "Discovers and qualifies Instagram profiles that appear to be selling paid offers (coaching/mentorship/signals/communities) using Google-style discovery + profile enrichment.",
+  "version": "0.0",
+  "meta": {
+    "templateId": "ai-generated-actor",
+    "generatedBy": "GPT-5.2 Thinking"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}

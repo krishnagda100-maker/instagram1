@@ -1,0 +1,55 @@
+{
+  "title": "Instagram Lead Finder Input Schema",
+  "type": "object",
+  "properties": {
+    "queries": {
+      "type": "array",
+      "title": "Search Queries",
+      "description": "List of Google-style discovery queries to find potential Instagram URLs.",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "site:instagram.com (\"wholesaling\" OR \"wholesale real estate\") (\"coach\" OR \"mentorship\" OR \"apply\")",
+        "site:instagram.com (\"trading\" OR \"options\") (\"signals\" OR \"community\" OR \"book a call\")"
+      ]
+    },
+    "maxProfiles": {
+      "type": "integer",
+      "title": "Maximum Profiles",
+      "description": "Maximum number of profiles to process.",
+      "default": 50
+    },
+    "minFollowers": {
+      "type": "integer",
+      "title": "Minimum Followers",
+      "description": "Minimum number of followers to qualify an account.",
+      "default": 500
+    },
+    "activeWithinDays": {
+      "type": "integer",
+      "title": "Active Within (Days)",
+      "description": "Filter profiles with posts within the last X days.",
+      "default": 90
+    },
+    "requireLinkOrEmail": {
+      "type": "boolean",
+      "title": "Require Link or Email",
+      "description": "If true, only profiles with external links or emails are qualified.",
+      "default": true
+    },
+    "proxyConfiguration": {
+      "type": "object",
+      "title": "Proxy Configuration",
+      "description": "Set up Apify Proxy.",
+      "properties": {
+        "useApifyProxy": {
+          "type": "boolean"
+        }
+      },
+      "default": {
+        "useApifyProxy": true
+      }
+    }
+  }
+}

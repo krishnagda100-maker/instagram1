@@ -1,0 +1,12 @@
+{
+  "name": "instagram-monetization-lead-finder",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Apify Actor: Instagram Monetization Lead Finder",
+  "engines": { "node": ">=20.0.0" },
+  "scripts": { "start": "node src/main.js" },
+  "dependencies": {
+    "apify": "^3.4.2",
+    "crawlee": "^3.13.8"
+  }
+}
