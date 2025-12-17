@@ -47,6 +47,7 @@
       "properties": {
         "useApifyProxy": {
           "title": "Use Apify Proxy",
+          "description": "If enabled, the Actor will use Apify Proxy to avoid blocking.",
           "type": "boolean",
           "default": true
         }
