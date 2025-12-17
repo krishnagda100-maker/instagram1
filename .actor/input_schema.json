@@ -7,6 +7,7 @@
       "type": "array",
       "title": "Search Queries",
       "description": "List of Google-style discovery queries to find potential Instagram URLs.",
+      "editor": "stringList",
       "items": {
         "type": "string"
       },
