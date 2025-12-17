@@ -47,7 +47,7 @@
       "properties": {
         "useApifyProxy": {
           "title": "Use Apify Proxy",
-          "type": "boolean"
+          "type": "boolean",
           "default": true
         }
       },
