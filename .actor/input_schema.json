@@ -44,6 +44,7 @@
       "type": "object",
       "title": "Proxy Configuration",
       "description": "Set up Apify Proxy.",
+      "editor": "proxy",
       "properties": {
         "useApifyProxy": {
           "title": "Use Apify Proxy",
