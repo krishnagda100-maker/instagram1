@@ -1,20 +1,41 @@
 {
-  "type": "object",
-  "properties": {
-    "handle": { "type": "string" },
-    "profile_url": { "type": "string" },
-    "name": { "type": "string" },
-    "bio_text": { "type": "string" },
-    "followers": { "type": "integer" },
-    "is_private": { "type": "boolean" },
-    "email": { "type": "string" },
-    "external_links": { "type": "array", "items": { "type": "string" } },
-    "monetization_domains": { "type": "array", "items": { "type": "string" } },
-    "niche_keywords_matched": { "type": "array", "items": { "type": "string" } },
-    "offer_keywords_matched": { "type": "array", "items": { "type": "string" } },
-    "last_post_date": { "type": "string", "format": "date" },
-    "score": { "type": "integer" },
-    "reason": { "type": "string" }
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "handle": { "type": "string" },
+      "profile_url": { "type": "string" },
+      "name": { "type": "string" },
+      "bio_text": { "type": "string" },
+      "followers": { "type": "integer" },
+      "is_private": { "type": "boolean" },
+      "email": { "type": "string" },
+      "external_links": { "type": "array", "items": { "type": "string" } },
+      "monetization_domains": { "type": "array", "items": { "type": "string" } },
+      "niche_keywords_matched": { "type": "array", "items": { "type": "string" } },
+      "offer_keywords_matched": { "type": "array", "items": { "type": "string" } },
+      "last_post_date": { "type": "string", "format": "date" },
+      "score": { "type": "integer" },
+      "reason": { "type": "string" }
+    },
+    "required": ["handle", "profile_url", "score"]
   },
-  "required": ["handle", "profile_url", "score"]
+  "views": {
+    "overview": {
+      "title": "Instagram Leads",
+      "transformation": {
+        "fields": ["handle", "profile_url", "followers", "score", "reason"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "handle": { "label": "Handle" },
+          "profile_url": { "label": "Profile URL", "format": "link" },
+          "followers": { "label": "Followers", "format": "number" },
+          "score": { "label": "Score", "format": "number" },
+          "reason": { "label": "Why This Lead" }
+        }
+      }
+    }
+  }
 }
